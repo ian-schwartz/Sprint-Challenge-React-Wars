@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import styled from "styled-components";
 import StarWarsCard from "./StarWarsCard";
+
+const StyledDisplay = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 100px;
+`;
 
 const Display = () => {
       // Try to think through what state you'll need for this app before starting. Then build out
@@ -24,13 +32,13 @@ const Display = () => {
   }, []);
 
   return (
-      <div className="character">
+      <StyledDisplay>
           {characters.map(item => {
               return ( 
-              <StarWarsCard name={item.name} mass={item.mass}/> 
+              <StarWarsCard name={item.name} birth_year={item.birth_year} hair_color={item.hair_color} eye_color={item.eye_color} height={item.height} mass={item.mass}/> 
               );
           })}
-          </div>
+          </StyledDisplay>
   );
 }
 export default Display;
