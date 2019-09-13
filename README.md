@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+- React is a UI library that is used to create complex and vibrant user interfaces. It was created by engineers at Facebook in order to assist in developing large web applications that can change data without reloading the page. Its main purpose is to be fast, scalable, and simple.
+
 - [ ] What does it mean to _think_ in react?
+
+- To "think" in React is developing in a pattern or mindset, where pieces are efficiently broken down into components and reused. React encourages the creation of small, reusable components that can be easily put together.
 
 - [ ] Describe state.
 
+- State is a term often used in programming to describe data.  Web applications are comprised of data and things that change that data, this is what state refers to.
+
 - [ ] Describe props.
 
+- When information is held on state inside of a component and needs to be passed to another, it is passed as props.  When it is sent down to the child component, the props object can be accessed like most any other object.  Changes are never made to the props data itself, instead, it is sent back to the state holding component which is often within a called function. 
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+- A side effect is anything that effects something outside the scope of the function being executed. One example of side effects is fetching data from an API.  Effect hooks are used to sync effects in a React component to state or prop changes.
 
 ## Project Set Up
 
